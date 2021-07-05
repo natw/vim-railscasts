@@ -1,17 +1,16 @@
-" MIT License. Copyright (c) 2013-2020 Bailey Ling et al.
 " vim: et ts=2 sts=2 sw=2 tw=80
 
 scriptencoding utf-8
 
 let g:airline#themes#railscasts#palette = {}
 
-let s:gui_yellow = '#FFBC51'
-let s:gui_dark_blue = '#000033'
-let s:gui_white = '#ffffff'
-let s:gui_teal = '#9cffd3'
-let s:gui_med_grey = '#444444'
-let s:gui_dark_grey = '#202020'
-let s:gui_purple = '#5f005f'
+let s:gui_yellow       = '#FFC66D'
+let s:gui_dark_blue    = '#000033'
+let s:gui_white        = '#ffffff'
+let s:gui_teal         = '#9cffd3'
+let s:gui_med_grey     = '#444444'
+let s:gui_dark_grey    = '#202020'
+let s:gui_purple       = '#5f005f'
 let s:gui_light_purple = '#7980D2'
 
 let s:airline_a_normal = [ s:gui_dark_blue, s:gui_yellow,    17,  190 ]
@@ -26,23 +25,25 @@ let g:airline#themes#railscasts#palette.normal_modified = {
       \ }
 
 
-let s:gui_blue1 = '#6d9cbe'
-let s:gui_cadet = '#5F6B73'
+let s:gui_blue1       = '#6d9cbe'
+let s:gui_cadet       = '#5F6B73'
 let s:gui_light_slate = '#84919A'
-let s:gui_blue2 = '#D0D0FF'
-let s:gui_jeans = '#57ADEB'
-let s:gui_blue_text = '#00005f'
-let s:gui_sapphire = '#335771'
+let s:gui_blue2       = '#D0D0FF'
+let s:gui_jeans       = '#57ADEB'
+let s:gui_blue_text   = '#00005f'
+let s:gui_sapphire    = '#335771'
 
-let s:airline_a_insert = [ s:gui_blue_text , s:gui_light_slate , 17  , 45  ]
-let s:airline_b_insert = [ s:gui_blue_text , s:gui_blue1 , 255 , 27  ]
-let s:airline_c_insert = [ s:gui_white , s:gui_sapphire , 15  , 17  ]
+let s:airline_a_insert = [ s:gui_blue_text, s:gui_light_slate, 17,  45 ]
+let s:airline_b_insert = s:airline_b_normal
+let s:airline_c_insert = s:airline_c_normal
+" let s:airline_b_insert = [ s:gui_blue_text, s:gui_blue1,       255, 27 ]
+" let s:airline_c_insert = [ s:gui_white,     s:gui_sapphire,    15,  17 ]
 let g:airline#themes#railscasts#palette.insert = airline#themes#generate_color_map(
       \ s:airline_a_insert, s:airline_b_insert, s:airline_c_insert
       \ )
 
 let g:airline#themes#railscasts#palette.insert_modified = {
-      \ 'airline_c': [ s:gui_white, s:gui_purple , 255     , 53      , ''     ] ,
+      \ 'airline_c': [ s:gui_white, s:gui_purple, 255, 53, '' ],
       \ }
 let g:airline#themes#railscasts#palette.insert_paste = {
       \ 'airline_a': [s:airline_a_insert[0], s:gui_yellow, s:airline_a_insert[2], 172, ''],
@@ -70,11 +71,9 @@ let g:airline#themes#railscasts#palette.inactive_modified = {
       \ 'airline_c': [ '#875faf' , '' , 97 , '' , '' ] ,
       \ }
 
-" For commandline mode, we use the colors from normal mode, except the mode
-" indicator should be colored differently, e.g. light green
-let s:airline_a_commandline = [ '#0000ff' , '#0cff00' , 17  , 40 ]
-let s:airline_b_commandline = [ '#ffffff' , '#444444' , 255 , 238 ]
-let s:airline_c_commandline = [ '#9cffd3' , '#202020' , 85  , 234 ]
+let s:airline_a_commandline = [ s:gui_blue_text, '#87af5f' , 17  , 40 ]
+let s:airline_b_commandline = s:airline_b_normal
+let s:airline_c_commandline = s:airline_c_normal
 let g:airline#themes#railscasts#palette.commandline = airline#themes#generate_color_map(s:airline_a_commandline, s:airline_b_commandline, s:airline_c_commandline)
 
 " Accents are used to give parts within a section a slightly different look or
@@ -87,15 +86,3 @@ let g:airline#themes#railscasts#palette.commandline = airline#themes#generate_co
 let g:airline#themes#railscasts#palette.accents = {
       \ 'red': [ '#ff0000' , '' , 160 , ''  ]
       \ }
-
-
-" Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
-" variable so that related functionality is loaded if the user is using
-" ctrlp. Note that this is optional, and if you do not define ctrlp colors
-" they will be chosen automatically from the existing palette.
-if get(g:, 'loaded_ctrlp', 0)
-  let g:airline#themes#railscasts#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(
-        \ [ '#d7d7ff' , '#5f00af' , 189 , 55  , ''     ],
-        \ [ '#ffffff' , '#875fd7' , 231 , 98  , ''     ],
-        \ [ '#5f00af' , '#ffffff' , 55  , 231 , 'bold' ])
-endif
