@@ -8,14 +8,7 @@ endif
 
 let g:colors_name = "railscasts"
 
-hi link NeomakeError Error
-hi link NeomakeWarning Error
-
-hi link htmlTag                     xmlTag
-hi link htmlTagName                 xmlTagName
-hi link htmlEndTag                  xmlEndTag
-
-" highlight Normal                    guifg=#E6E1DC guibg=#000000
+highlight Normal                    guifg=#E6E1DC guibg=#000000
 highlight Cursor                    guifg=#000000 ctermfg=0   guibg=#FFFFFF ctermbg=15
 highlight CursorLine                guibg=#121212 ctermbg=233 cterm=NONE
 highlight Comment                   guifg=#d7af87 ctermfg=180
@@ -65,22 +58,49 @@ highlight SpellRare                 guifg=#D75F87 ctermfg=168 guibg=NONE ctermbg
 highlight SpellCap                  guifg=#D0D0FF ctermfg=189 guibg=NONE ctermbg=NONE gui=underline cterm=underline
 highlight MatchParen                guifg=#FFFFFF ctermfg=15 guibg=#005f5f ctermbg=23
 
+
+" Signs ------
+"
+hi SignColumn guifg=#E6E1DC guibg=NONE
+
+hi ErrorSign guifg=#DA4939
+hi link LspDiagnosticsSignError       ErrorSign
+hi link LspDiagnosticsSignWarning     ErrorSign
+hi link LspDiagnosticsSignInformation ErrorSign
+hi link LspDiagnosticsSignHint        ErrorSign
+hi link AleErrorSign                  ErrorSign
+hi link AleWarningSign                ErrorSign
+hi link AleStyleWarningSign           ErrorSign
+hi link AleInfoSign                   ErrorSign
+
+hi InfoSign guifg=#d0d0ff
+hi link GitGutterChange InfoSign
+
+hi AddedSign guifg=#87af5f
+hi link GitGutterAdd AddedSign
+
+hi RemovedSign guifg=#990000
+hi link GitGutterDelete RemovedSign
+
+" Virtual Text --------
+
+highlight LspDiagnosticsDefaultError     guifg=#ffffff guibg=#d70000
+highlight LspDiagnosticsVirtualTextError guifg=#d0d0ff guibg=NONE
+" highlight LspDiagnosticsUnderlineError gui=underline
+
 highlight AleVirtualTextError       guifg=#ffffff guibg=#384048
 highlight AleVirtualTextWarning     guifg=#ffffff guibg=#384048
 
-highlight DiffAdd ctermfg=0 cterm=NONE guifg=#000000 gui=NONE
-highlight DiffChange ctermfg=0 cterm=NONE guifg=#000000 gui=NONE
-highlight DiffText ctermfg=0 guifg=#000000 cterm=NONE gui=NONE
-" highlight DiffAdd cterm=none ctermfg=bg ctermbg=Green gui=none guifg=bg guibg=Green
-" highlight DiffDelete cterm=none ctermfg=bg ctermbg=Red gui=none guifg=bg guibg=Red
-" highlight DiffChange cterm=none ctermfg=bg ctermbg=Yellow gui=none guifg=bg guibg=Yellow
-" highlight DiffText cterm=none ctermfg=bg ctermbg=Magenta gui=none guifg=bg guibg=Magenta
+" Diffs ---------
 
-" taking some color ideas from ir_black
+" TODO: why did I do this? maybe it was highlighting entire lines before?
+highlight DiffAdd    ctermfg=0 cterm=NONE    guifg=#000000 gui=NONE
+highlight DiffChange ctermfg=0 cterm=NONE    guifg=#000000 gui=NONE
+highlight DiffText   ctermfg=0 guifg=#000000 cterm=NONE    gui=NONE
 
-hi        VertSplit    guifg=#202020 guibg=#CCCCCC ctermfg=black ctermbg=darkgray
-hi        StatusLine   guifg=#CCCCCC guibg=#202020 gui=NONE
-hi        StatusLineNC guifg=black   guibg=#202020 gui=NONE
-hi        Folded       guifg=#a0a8b0 guibg=#384048 gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE
 
-highlight clear SignColumn
+
+hi VertSplit    guifg=#202020 guibg=#CCCCCC ctermfg=black ctermbg=darkgray
+hi StatusLine   guifg=#CCCCCC guibg=#202020 gui=NONE
+hi StatusLineNC guifg=black   guibg=#202020 gui=NONE
+hi Folded       guifg=#a0a8b0 guibg=#384048 gui=NONE      ctermfg=NONE ctermbg=NONE cterm=NONE
