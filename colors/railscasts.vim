@@ -8,56 +8,48 @@ endif
 
 let g:colors_name = "railscasts"
 
-highlight Comment                   guifg=#d7af87 ctermfg=180
-highlight Constant                  guifg=#6D9CBE ctermfg=73
-highlight Cursor                    guifg=#000000 ctermfg=0    guibg=#FFFFFF ctermbg=15
-highlight CursorLine                guibg=#121212 ctermbg=233  cterm=NONE
-highlight Define                    guifg=#CC7833 ctermfg=173
-highlight Error                     guifg=#FFC66D ctermfg=221  guibg=#990000 ctermbg=88
-highlight Function                  guifg=#FFC66D ctermfg=221  gui=NONE      cterm=NONE
-highlight Identifier                guifg=#6D9CBE ctermfg=73   gui=NONE      cterm=NONE
-highlight Include                   guifg=#CC7833 ctermfg=173  gui=NONE      cterm=NONE
-highlight Keyword                   guifg=#CC7833 ctermfg=173  cterm=NONE
-highlight LineNr                    guifg=#3d3d3d ctermfg=237  guibg=black
-highlight Normal                    guifg=#E6E1DC guibg=#000000
-highlight Number                    guifg=#87af5f ctermfg=107
-highlight PreCondit                 guifg=#CC7833 ctermfg=173  gui=NONE      cterm=NONE
-highlight PreProc                   guifg=#7980D2 ctermfg=103
-highlight Search                    guifg=NONE    ctermfg=NONE guibg=#2b2b2b ctermbg=235  cterm=underline
-highlight Statement                 guifg=#CC7833 ctermfg=173  gui=NONE      cterm=NONE
-highlight String                    guifg=#87af5f ctermfg=107
-highlight Title                     guifg=#FFFFFF ctermfg=15
-highlight Type                      guifg=#d75f5f ctermfg=167  gui=NONE      cterm=NONE
-highlight Visual                    guibg=#5A647E ctermbg=60
+hi Directory                 guifg=#87af5f ctermfg=107
+hi Comment                   guifg=#d7af87 ctermfg=180
+hi Constant                  guifg=#6D9CBE ctermfg=73
+hi Cursor                    guifg=#000000 ctermfg=0    guibg=#FFFFFF ctermbg=15
+hi CursorLine                guibg=#121212 ctermbg=233  cterm=NONE
+hi Define                    guifg=#CC7833 ctermfg=173
+hi Error                     guifg=#FFC66D ctermfg=221  guibg=#990000 ctermbg=88
+hi Function                  guifg=#FFC66D ctermfg=221  gui=NONE      cterm=NONE
+hi Identifier                guifg=#6D9CBE ctermfg=73   gui=NONE      cterm=NONE
+hi Include                   guifg=#CC7833 ctermfg=173  gui=NONE      cterm=NONE
+hi Keyword                   guifg=#CC7833 ctermfg=173  cterm=NONE
+hi LineNr                    guifg=#3d3d3d ctermfg=237  guibg=black
+hi Normal                    guifg=#E6E1DC guibg=#000000
+hi Number                    guifg=#87af5f ctermfg=107
+hi PreCondit                 guifg=#CC7833 ctermfg=173  gui=NONE      cterm=NONE
+hi PreProc                   guifg=#7980D2 ctermfg=103
+hi Search                    guifg=NONE    ctermfg=NONE guibg=#2b2b2b ctermbg=235  cterm=underline
+hi Statement                 guifg=#CC7833 ctermfg=173  gui=NONE      cterm=NONE
+hi String                    guifg=#87af5f ctermfg=107
+hi Title                     guifg=#FFFFFF ctermfg=15
+hi Type                      guifg=#d75f5f ctermfg=167  gui=NONE      cterm=NONE
+hi Visual                    guibg=#5A647E ctermbg=60
+hi Special                   guifg=#DA4939 ctermfg=167
 
-highlight DiffAdd                   guifg=#E6E1DC ctermfg=7    guibg=#519F50 ctermbg=71
-highlight DiffDelete                guifg=#E6E1DC ctermfg=7    guibg=#660000 ctermbg=52
+hi Delimeter                 guifg=#DA4939 ctermfg=167
+hi MatchParen                guifg=#FFFFFF ctermfg=15   guibg=#009090 ctermbg=23
 
-highlight Special                   guifg=#DA4939 ctermfg=167
-highlight MatchParen                guifg=#FFFFFF ctermfg=15   guibg=#005f5f ctermbg=23
+hi DiffAdd                   guifg=#E6E1DC ctermfg=7    guibg=#519F50 ctermbg=71
+hi DiffDelete                guifg=#E6E1DC ctermfg=7    guibg=#660000 ctermbg=52
 
-highlight pythonBuiltin             guifg=#6D9CBE ctermfg=73   gui=NONE      cterm=NONE
-highlight rubyBlockParameter        guifg=#FFFFFF ctermfg=15
-highlight rubyClass                 guifg=#FFFFFF ctermfg=15
-highlight rubyConstant              guifg=#DA4939 ctermfg=167
-highlight rubyInstanceVariable      guifg=#D0D0FF ctermfg=189
-highlight rubyInterpolation         guifg=#519F50 ctermfg=107
-highlight rubyLocalVariableOrMethod guifg=#D0D0FF ctermfg=189
-highlight rubyPredefinedConstant    guifg=#DA4939 ctermfg=167
-highlight rubyPseudoVariable        guifg=#FFC66D ctermfg=221
-highlight rubyStringDelimiter       guifg=#A5C261 ctermfg=143
+" no idea why these are here
+hi xmlEndTag                 guifg=#d7af5f ctermfg=179
+hi xmlTag                    guifg=#d7af5f ctermfg=179
+hi xmlTagName                guifg=#d7af5f ctermfg=179
 
-highlight xmlEndTag                 guifg=#d7af5f ctermfg=179
-highlight xmlTag                    guifg=#d7af5f ctermfg=179
-highlight xmlTagName                guifg=#d7af5f ctermfg=179
+hi mailEmail                 guifg=#87af5f ctermfg=107  gui=italic    cterm=underline
+hi mailHeaderKey             guifg=#FFC66D ctermfg=221
+hi mailSubject               guifg=#87af5f ctermfg=107
 
-highlight mailEmail                 guifg=#87af5f ctermfg=107  gui=italic    cterm=underline
-highlight mailHeaderKey             guifg=#FFC66D ctermfg=221
-highlight mailSubject               guifg=#87af5f ctermfg=107
-
-highlight SpellBad                  guifg=#D70000 ctermfg=160  ctermbg=NONE  cterm=underline
-highlight SpellCap                  guifg=#D0D0FF ctermfg=189  guibg=NONE    ctermbg=NONE gui=underline cterm=underline
-highlight SpellRare                 guifg=#D75F87 ctermfg=168  guibg=NONE    ctermbg=NONE gui=underline cterm=underline
+hi SpellBad                  guifg=#D70000 ctermfg=160  ctermbg=NONE  cterm=underline
+hi SpellCap                  guifg=#D0D0FF ctermfg=189  guibg=NONE    ctermbg=NONE gui=underline cterm=underline
+hi SpellRare                 guifg=#D75F87 ctermfg=168  guibg=NONE    ctermbg=NONE gui=underline cterm=underline
 
 
 " Signs ------
