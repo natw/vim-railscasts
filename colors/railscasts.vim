@@ -94,3 +94,5 @@ hi Folded       guifg=#a0a8b0 guibg=#384048 gui=NONE      ctermfg=NONE ctermbg=N
 " popup menu (ie completion)
 hi PMenu guibg=#333948
 hi PMenuSel guibg=#202020
+
+hi link @lsp.mod.defaultLibrary Special
