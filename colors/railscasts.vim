@@ -31,6 +31,8 @@ hi Title                     guifg=#FFFFFF ctermfg=15
 hi Type                      guifg=#d75f5f ctermfg=167  gui=NONE      cterm=NONE
 hi Visual                    guibg=#5A647E ctermbg=60
 hi Special                   guifg=#DA4939 ctermfg=167
+hi Question                  guifg=#005a00
+hi MoreMsg                   guifg=#005a00
 
 hi Delimeter                 guifg=#DA4939 ctermfg=167
 hi MatchParen                guifg=#FFFFFF ctermfg=15   guibg=#009090 ctermbg=23
