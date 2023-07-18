@@ -5,5 +5,8 @@ I make no claim of authenticity, just personal preference.
 
 Originally based on [Nick Moffitt's version](https://www.vim.org/scripts/script.php?script_id=2175) which itself was based on someone else's.
 
-Things still look a little weird with `termguicolors` turned on.
-Fixing that is my current goal.
+I use neovim these days, but I try to keep this at least compatible with regular vim.
+No promises that things will look as good, but it shouldn't blow up on you.
+
+I can't quite bring myself to go through and remove all the terminal colors,
+but I definitely don't care about them.
