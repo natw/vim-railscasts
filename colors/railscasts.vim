@@ -29,6 +29,7 @@ hi LineNr       guifg=#3d3d3d guibg=black
 hi MatchParen   guifg=#FFFFFF guibg=#009090
 hi MoreMsg      guifg=#005a00
 hi Normal       guifg=#E6E1DC guibg=#000000
+hi NormalFloat  guibg=#202020
 hi Number       guifg=#87af5f
 hi PreCondit    guifg=#CC7833 gui=NONE
 hi PreProc      guifg=#7980D2
