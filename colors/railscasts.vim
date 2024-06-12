@@ -8,10 +8,12 @@ endif
 
 let g:colors_name = "railscasts"
 
+" #1f7a7a - complement of comment color
+"
 hi Comment                guifg=#d7af87
 hi Constant               guifg=#6D9CBE
-hi CurSearch              guibg=#ffffff guifg=#3d3d3d gui=nocombine,bold
-hi Cursor                 guifg=#000000 guibg=#FFFFFF
+hi CurSearch              guifg=#3d3d3d guibg=#e6e1dc gui=nocombine,bold
+hi Cursor                 guifg=#000000 guibg=#e6e1dc
 hi CursorLine             guibg=#121212
 hi Define                 guifg=#CC7833
 hi Delimeter              guifg=#DA4939
@@ -22,12 +24,12 @@ hi DiffDelete             guifg=#E6E1DC guibg=#660000
 hi Directory              guifg=#87af5f
 hi Error                  guifg=#FFC66D guibg=#990000
 hi Folded                 guifg=#a0a8b0 guibg=#384048 gui=NONE
-hi Folded                 guifg=#a0a8b0 guibg=#384048 gui=NONE
 hi Function               guifg=#FFC66D gui=NONE
 hi Identifier             guifg=#6D9CBE gui=NONE
 hi Include                guifg=#CC7833 gui=NONE
 hi Keyword                guifg=#CC7833 cterm=NONE
 hi LineNr                 guifg=#3d3d3d guibg=black
+hi LspInlayHint           guifg=#4f5258
 hi MatchParen             guifg=#FFFFFF guibg=#009090
 hi MoreMsg                guifg=#005a00
 hi Normal                 guifg=#E6E1DC guibg=#000000
@@ -40,20 +42,22 @@ hi PreProc                guifg=#7980D2
 hi Question               guifg=#005a00
 hi Search                 guifg=NONE    guibg=None    gui=reverse
 hi Special                guifg=#DA4939
-hi SpellBad               guifg=#D70000
+"hi SpellBad               guifg=#D70000
+hi SpellBad               guifg=#990000 guibg=#000000 gui=bold
 hi SpellCap               guifg=#D0D0FF guibg=NONE    gui=underline
 hi SpellRare              guifg=#D75F87 guibg=NONE    gui=underline
 hi Statement              guifg=#CC7833 gui=NONE
-hi StatusLine             guifg=#CCCCCC guibg=#202020 gui=NONE
-hi StatusLine             guifg=#CCCCCC guibg=#202020 gui=NONE
-hi StatusLineNC           guifg=black   guibg=#202020 gui=NONE
-hi StatusLineNC           guifg=black   guibg=#202020 gui=NONE
+  hi StatusLine             guifg=#CCCCCC guibg=#202020 gui=NONE
+  hi StatusLine             guifg=#CCCCCC guibg=#202020 gui=NONE
+  hi StatusLineNC           guifg=black   guibg=#202020 gui=NONE
+  hi StatusLineNC           guifg=black   guibg=#202020 gui=NONE
 hi String                 guifg=#87af5f
 hi TabLine                guifg=#ffffff guibg=#2c2e33 gui=NONE
 hi TabLineFill            guibg=#2c2e33 gui=NONE
 hi TabLineSel             gui=bold
 hi Title                  guifg=#FFFFFF
 hi Type                   guifg=#d75f5f gui=NONE
+"hi Type                   guifg=#CC3333 gui=NONE
 hi VertSplit              guifg=#202020 guibg=#CCCCCC
 hi VertSplit              guifg=#202020 guibg=#CCCCCC
 hi Visual                 guibg=#5A647E
