@@ -41,7 +41,8 @@ hi PreCondit              guifg=#CC7833 gui=NONE
 hi PreProc                guifg=#7980D2
 hi Question               guifg=#005a00
 hi Search                 guifg=NONE    guibg=None    gui=reverse
-hi Special                guifg=#DA4939
+hi Special                guifg=#d75f5f
+"hi Special                guifg=#DA4939
 "hi SpellBad               guifg=#D70000
 hi SpellBad               guifg=#990000 guibg=#000000 gui=bold
 hi SpellCap               guifg=#D0D0FF guibg=NONE    gui=underline
