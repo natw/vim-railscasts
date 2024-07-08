@@ -48,10 +48,10 @@ hi SpellBad               guifg=#990000 guibg=#000000 gui=bold
 hi SpellCap               guifg=#D0D0FF guibg=NONE    gui=underline
 hi SpellRare              guifg=#D75F87 guibg=NONE    gui=underline
 hi Statement              guifg=#CC7833 gui=NONE
-  hi StatusLine             guifg=#CCCCCC guibg=#202020 gui=NONE
-  hi StatusLine             guifg=#CCCCCC guibg=#202020 gui=NONE
-  hi StatusLineNC           guifg=black   guibg=#202020 gui=NONE
-  hi StatusLineNC           guifg=black   guibg=#202020 gui=NONE
+hi StatusLine             guifg=#CCCCCC guibg=#202020 gui=NONE
+hi StatusLine             guifg=#CCCCCC guibg=#202020 gui=NONE
+hi StatusLineNC           guifg=black   guibg=#202020 gui=NONE
+hi StatusLineNC           guifg=black   guibg=#202020 gui=NONE
 hi String                 guifg=#87af5f
 hi TabLine                guifg=#ffffff guibg=#2c2e33 gui=NONE
 hi TabLineFill            guibg=#2c2e33 gui=NONE
@@ -91,6 +91,21 @@ hi link GitGutterChange InfoSign
 hi link GitGutterDelete RemovedSign
 
 hi rubyInterpolationDelimiter guifg=#3a7a38
+
+hi! CmpItemAbbrDeprecated guibg=NONE guifg=#808080 gui=strikethrough 
+"hi! CmpItemAbbrMatch      guibg=NONE guifg=#569CD6
+hi! CmpItemAbbrMatch      guibg=NONE guifg=#6d9cbe
+hi! CmpItemKindVariable   guibg=NONE guifg=#9CDCFE
+"hi! CmpItemKindFunction   guibg=NONE guifg=#C586C0
+hi! CmpItemKindFunction   guibg=NONE guifg=#d0d0ff
+hi! CmpItemKindKeyword    guibg=NONE guifg=#D4D4D4
+
+hi! link CmpItemAbbrMatchFuzzy CmpItemAbbrMatch
+hi! link CmpItemKindInterface CmpItemKindVariable
+hi! link CmpItemKindText CmpItemKindVariable
+hi! link CmpItemKindMethod CmpItemKindFunction
+hi! link CmpItemKindProperty CmpItemKindKeyword
+hi! link CmpItemKindUnit CmpItemKindKeyword
 
 if has('nvim')
   hi link @punctuation.special.ruby rubyInterpolationDelimiter
