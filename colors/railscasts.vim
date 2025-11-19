@@ -12,7 +12,7 @@ let g:colors_name = "railscasts"
 "
 hi Comment                guifg=#d7af87
 hi Constant               guifg=#6D9CBE
-hi CurSearch              guifg=#3d3d3d guibg=#e6e1dc gui=nocombine,bold
+hi CurSearch              guifg=#3d3d3d guibg=#77dcdc gui=nocombine,bold
 hi Cursor                 guifg=#000000 guibg=#e6e1dc
 hi CursorLine             guibg=#121212
 hi Define                 guifg=#CC7833
