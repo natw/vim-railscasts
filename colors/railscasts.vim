@@ -16,7 +16,7 @@ hi CurSearch              guifg=#3d3d3d guibg=#77dcdc gui=nocombine,bold
 hi Cursor                 guifg=#000000 guibg=#e6e1dc
 hi CursorLine             guibg=#121212
 hi Define                 guifg=#CC7833
-hi Delimeter              guifg=#DA4939
+hi Delimiter              guifg=#DA4939
 hi DiagnosticFloatingWarn guifg=#ffc66d guibg=#303030
 hi DiagnosticWarn         guifg=#ffc66d
 hi DiffAdd                guifg=#E6E1DC guibg=#519F50
@@ -108,25 +108,24 @@ hi! link CmpItemKindProperty CmpItemKindKeyword
 hi! link CmpItemKindUnit CmpItemKindKeyword
 
 if has('nvim')
+  hi link @identifier Identifier
+
   hi link @punctuation.special.ruby rubyInterpolationDelimiter
-  hi @text.uri.gomod guifg=#6D9CBE
+
+  hi link @lsp.type.namespace.go @module
+  hi link @text.uri.gomod Normal " I think this one might be defunct?
+  hi link @string.special.url.gomod Normal
 
   hi @tag.delimiter guifg=#bbbbbb
   hi @operator.xml guifg=#bbbbbb
   hi link @punctuation.delimiter.xml @string
-
-  hi link @identifier Identifier
 
   " not sure if this is generally applicable
   " really just want lua's `require` to be red
   hi link @lsp.typemod.function.defaultLibrary.lua Special
   hi link @variable.member.lua Identifier
 
-  hi link @lsp.type.namespace.go @module
-
   hi link @boolean.terraform Keyword
-  " hi link @variable.builtin Special
-  " hi link @lsp.type.variable.terraform Type
 
   hi link @lsp.mod.defaultLibrary Special
 endif
