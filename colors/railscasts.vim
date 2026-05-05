@@ -8,8 +8,6 @@ endif
 
 let g:colors_name = "railscasts"
 
-" #1f7a7a - complement of comment color
-"
 hi Comment                guifg=#d7af87
 hi Constant               guifg=#6D9CBE
 hi CurSearch              guifg=#3d3d3d guibg=#77dcdc gui=nocombine,bold
@@ -83,19 +81,17 @@ hi link GitGutterDelete RemovedSign
 hi rubyInterpolationDelimiter guifg=#3a7a38
 
 hi! CmpItemAbbrDeprecated guibg=NONE guifg=#808080 gui=strikethrough 
-"hi! CmpItemAbbrMatch      guibg=NONE guifg=#569CD6
 hi! CmpItemAbbrMatch      guibg=NONE guifg=#6d9cbe
 hi! CmpItemKindVariable   guibg=NONE guifg=#9CDCFE
-"hi! CmpItemKindFunction   guibg=NONE guifg=#C586C0
 hi! CmpItemKindFunction   guibg=NONE guifg=#d0d0ff
 hi! CmpItemKindKeyword    guibg=NONE guifg=#D4D4D4
 
 hi! link CmpItemAbbrMatchFuzzy CmpItemAbbrMatch
-hi! link CmpItemKindInterface CmpItemKindVariable
-hi! link CmpItemKindText CmpItemKindVariable
-hi! link CmpItemKindMethod CmpItemKindFunction
-hi! link CmpItemKindProperty CmpItemKindKeyword
-hi! link CmpItemKindUnit CmpItemKindKeyword
+hi! link CmpItemKindInterface  CmpItemKindVariable
+hi! link CmpItemKindText       CmpItemKindVariable
+hi! link CmpItemKindMethod     CmpItemKindFunction
+hi! link CmpItemKindProperty   CmpItemKindKeyword
+hi! link CmpItemKindUnit       CmpItemKindKeyword
 
 hi link vimHiGroup vimHLGroup
 
