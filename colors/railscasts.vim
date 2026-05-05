@@ -28,7 +28,7 @@ hi Include                guifg=#CC7833 gui=NONE
 hi Keyword                guifg=#CC7833 cterm=NONE
 hi LineNr                 guifg=#3d3d3d guibg=black
 hi LspInlayHint           guifg=#4f5258
-hi MatchParen             guifg=#FFFFFF guibg=#009090
+hi MatchParen             guibg=#202020
 hi MoreMsg                guifg=#005a00
 hi Normal                 guifg=#E6E1DC guibg=#000000
 hi NormalFloat            guibg=#202020
