@@ -42,8 +42,6 @@ hi PreProc                guifg=#7980D2
 hi Question               guifg=#005a00
 hi Search                 guifg=NONE    guibg=None    gui=reverse
 hi Special                guifg=#d75f5f
-"hi Special                guifg=#DA4939
-"hi SpellBad               guifg=#D70000
 hi SpellBad               guifg=#990000 guibg=#000000 gui=bold
 hi SpellCap               guifg=#D0D0FF guibg=NONE    gui=underline
 hi SpellRare              guifg=#D75F87 guibg=NONE    gui=underline
@@ -58,7 +56,6 @@ hi TabLineFill            guibg=#2c2e33 gui=NONE
 hi TabLineSel             gui=bold
 hi Title                  guifg=#FFFFFF
 hi Type                   guifg=#d75f5f gui=NONE
-"hi Type                   guifg=#CC3333 gui=NONE
 hi VertSplit              guifg=#202020 guibg=#CCCCCC
 hi VertSplit              guifg=#202020 guibg=#CCCCCC
 hi Visual                 guibg=#5A647E
@@ -78,13 +75,6 @@ hi link LspDiagnosticsSignWarning     ErrorSign
 hi LspDiagnosticsDefaultError     guifg=#ffffff guibg=#d70000
 hi LspDiagnosticsVirtualTextError guifg=#d0d0ff guibg=NONE
 hi LspDiagnosticsUnderlineError   gui=underline
-
-hi AleVirtualTextError   guifg=#ffffff guibg=#384048
-hi AleVirtualTextWarning guifg=#ffffff guibg=#384048
-hi link AleErrorSign        ErrorSign
-hi link AleInfoSign         InfoSign
-hi link AleStyleWarningSign ErrorSign
-hi link AleWarningSign      ErrorSign
 
 hi link GitGutterAdd    AddedSign
 hi link GitGutterChange InfoSign
@@ -106,6 +96,8 @@ hi! link CmpItemKindText CmpItemKindVariable
 hi! link CmpItemKindMethod CmpItemKindFunction
 hi! link CmpItemKindProperty CmpItemKindKeyword
 hi! link CmpItemKindUnit CmpItemKindKeyword
+
+hi link vimHiGroup vimHLGroup
 
 if has('nvim')
   hi link @identifier Identifier
