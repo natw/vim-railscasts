@@ -31,7 +31,6 @@ hi LspInlayHint           guifg=#4f5258
 hi MatchParen             guibg=#202020
 hi MoreMsg                guifg=#005a00
 hi Normal                 guifg=#E6E1DC guibg=#000000
-hi NormalFloat            guibg=#202020
 hi Number                 guifg=#87af5f
 hi PMenu                  guifg=#e6e1dc guibg=#333948
 hi PMenuSel               guifg=#e6e1dc guibg=#202020
@@ -57,6 +56,8 @@ hi Type                   guifg=#d75f5f gui=NONE
 hi VertSplit              guifg=#202020 guibg=#CCCCCC
 hi VertSplit              guifg=#202020 guibg=#CCCCCC
 hi Visual                 guibg=#5A647E
+
+hi NormalFloat            guibg=#202020
 
 hi SignColumn    guifg=#E6E1DC  guibg=NONE
 hi ErrorSign     guifg=#DA4939
@@ -94,6 +95,8 @@ hi! link CmpItemKindProperty   CmpItemKindKeyword
 hi! link CmpItemKindUnit       CmpItemKindKeyword
 
 hi link vimHiGroup vimHLGroup
+
+hi link jsonKeyword Identifier
 
 if has('nvim')
   hi link @identifier Identifier
